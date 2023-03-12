@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="profileAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="422.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkjava.ProfileController">
+    <children>
+        <Label layoutX="28.0" layoutY="24.0" prefHeight="54.0" prefWidth="261.0" style="-fx-background-color: #c4705a;" text="            YOUR PROFILE" textFill="WHITE">
+            <font>
+                <Font name="Stencil" size="21.0" />
+            </font>
+        </Label>
+        <Button layoutX="43.0" layoutY="94.0" mnemonicParsing="false" onAction="#showFriends" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: #d3a691;" text="SHOW FRIENDS">
+            <font>
+                <Font name="Serif Regular" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="43.0" layoutY="165.0" mnemonicParsing="false" onAction="#showfr" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: #d3a691;" text="SHOW FRIENDS REQUESTS">
+            <font>
+                <Font name="Serif Regular" size="12.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="48.0" fitWidth="152.0" layoutX="274.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/MAP_Toy2.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="54.0" fitWidth="56.0" layoutX="308.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/png-transparent-computer-icons-avatar-user-profile-avatar-heroes-rectangle-black.png" />
+            </image>
+        </ImageView>
+      <Button layoutX="43.0" layoutY="306.0" mnemonicParsing="false" onAction="#logOut" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: #d3a691;" text="LOG OUT">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="43.0" layoutY="235.0" mnemonicParsing="false" onAction="#addfriends" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: #d3a691;" text="ADD FRIENDS">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

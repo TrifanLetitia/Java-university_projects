@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.socialnetworkjava.controller.UserController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="ADD USER INFO:" textAlignment="CENTER"
+           textFill="#9f9f9f">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField layoutX="14.0" layoutY="66.0" promptText="Give a name:"/>
+    <TextField layoutX="14.0" layoutY="100.0" promptText="Give an email:"/>
+    <TextField layoutX="14.0" layoutY="136.0" promptText="Give a password:"/>
+    <TextField layoutX="15.0" layoutY="175.0" promptText="Give age:"/>
+    <Button cancelButton="true" layoutX="575.0" layoutY="15.0" mnemonicParsing="false" text="X"/>
+</AnchorPane>

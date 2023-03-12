@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkjava.ProfileController">
+    <children>
+        <SplitPane dividerPositions="0.1310240963855422" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="24.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/search.jpg" />
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="filterField" layoutX="59.0" layoutY="12.0" onKeyReleased="#sortList" prefHeight="26.0" prefWidth="503.0" promptText="Search by name" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <TableView fx:id="usersTable" layoutX="-2.0" layoutY="-4.0" prefHeight="282.0" prefWidth="599.0">
+                            <columns>
+                                <TableColumn fx:id="userName" prefWidth="300.8000304698944" text="Name" />
+                                <TableColumn fx:id="userEmail" prefWidth="298.4000244140625" text="Email" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="42.0" layoutY="303.0" mnemonicParsing="false" onAction="#addfriends1" style="-fx-background-color: C4705AFF;" text="ADD FRIEND" textFill="WHITE">
+                            <font>
+                                <Font name="Thames" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

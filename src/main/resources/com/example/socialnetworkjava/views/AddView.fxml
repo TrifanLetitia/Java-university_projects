@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="320.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkjava.controller.UserController">
+    <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="121.0" style="&#10;" text="ADD USER INFO:" textAlignment="CENTER" textFill="#9f9f9f">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+   <TextField fx:id="txt" layoutX="20.0" layoutY="141.0" onKeyReleased="#setName" promptText="Age:" />
+   <TextField fx:id="txt1" layoutX="20.0" layoutY="107.0" onKeyReleased="#setEmail" promptText="Password:" />
+   <TextField fx:id="txt2" layoutX="20.0" layoutY="71.0" onKeyReleased="#setPassword" promptText="Email:" />
+   <TextField fx:id="txt3" layoutX="20.0" layoutY="38.0" onKeyReleased="#setAge" promptText="Name:" />
+    <Button cancelButton="true" layoutX="282.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: White;" text="X" />
+
+</AnchorPane>
